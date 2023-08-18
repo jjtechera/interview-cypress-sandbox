@@ -7,3 +7,9 @@ workflows:
       - cypress/run:
           start-command: 'npm run test'
           cypress-command: 'npx cypress run'
+
+      - store_artifacts:
+          path: /home/circleci/project/cypress/videos
+
+      - store_test_results:
+          path: /home/circleci/project/results
