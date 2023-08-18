@@ -45,6 +45,7 @@ module.exports = defineConfig({
   failOnStatusCode: false,
   responseTimeout: 120e3,
   screenshotOnRunFailure: true,
+  defaultCommandTimeout: 15000,
   reporter: 'mochawesome',
   reporterOptions: {
     reportFilename: "[status]_[datetime]-[name]",
