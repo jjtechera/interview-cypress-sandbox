@@ -4,7 +4,7 @@ Background:
 Given I am in the Sign Up Page
 
 @smoke @ui
-Scenario: Navigate to Sign up Validation
+Scenario: Sign up Page Validation
     Then Deel logo should be visible
     
     When I click on I'm a <options> button 

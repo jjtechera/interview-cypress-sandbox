@@ -20,6 +20,7 @@
     "cypress-mochawesome-reporter": "^3.5.0",
     "cypress-plugin-tab": "^1.0.5",
     "cypress-xpath": "^2.0.1",
+    "fs": "^0.0.1-security",
     "mocha": "^10.2.0",
     "mochawesome-merge": "^4.3.0",
     "mochawesome-report-generator": "^6.2.0"

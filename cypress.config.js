@@ -34,9 +34,10 @@ async function setupNodeEvents(on, config) {
 }
 
 module.exports = defineConfig({
-  projectID: 'jjdeel',
   env: {
     baseUrl: process.env.CYPRESS_BASE_URL,
+    api: process.env.CYPRESS_API,
+    apiKey: process.env.CYPRESS_API_KEY
    },
   e2e: {
     specPattern: ["**/*.feature", "cypress/e2e/**/*.cy.{js,jsx,ts,tsx}"],
