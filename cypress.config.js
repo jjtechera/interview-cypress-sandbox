@@ -34,6 +34,7 @@ async function setupNodeEvents(on, config) {
 }
 
 module.exports = defineConfig({
+  projectID: 'jjdeel',
   env: {
     baseUrl: process.env.CYPRESS_BASE_URL,
    },
