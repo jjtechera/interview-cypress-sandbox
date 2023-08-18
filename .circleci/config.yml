@@ -7,4 +7,3 @@ workflows:
       - cypress/run:
           start-command: 'npm run test'
           cypress-command: 'npx cypress run'
-          parallelism: 4 # use 4 CircleCI machines to distribute specs  
