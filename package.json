@@ -1,0 +1,36 @@
+{
+  "name": "interview-cypress-sandbox",
+  "version": "1.0.0",
+  "description": "Interview Cypress Sandbox",
+  "main": "index.js",
+  "scripts": {
+    "open": "cypress open",
+    "test": "npx cypress run",
+    "cy:all:prod": "CYPRESS_BASE_URL=https://demo.letsdeel.com/ cypress run --config viewportHeight=900,viewportWidth=1920 --browser chrome"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "",
+  "devDependencies": {
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "@cypress/webpack-preprocessor": "^5.17.1",
+    "@esbuild-plugins/node-modules-polyfill": "^0.2.2",
+    "cypress": "^12.14.0",
+    "cypress-mochawesome-reporter": "^3.5.0",
+    "cypress-plugin-tab": "^1.0.5",
+    "cypress-xpath": "^2.0.1",
+    "mocha": "^10.2.0",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/tests/step_definitions/**/*.{js,ts}",
+    "filterSpecs": true,
+    "omitFiltered": true
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^17.1.0",
+    "webpack": "^5.84.0"
+  }
+}

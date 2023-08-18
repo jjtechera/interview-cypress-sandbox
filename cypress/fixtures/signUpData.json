@@ -1,0 +1,10 @@
+{
+    "validCSignUpData": {
+      "firstName": "John",
+      "lastName": "Doe",
+      "preferredName": "JD",
+      "email": "john.doe@example.com",
+      "password": "P@ssw0rd"
+    }
+  }
+  

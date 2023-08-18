@@ -1,0 +1,95 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-08-18T01:39:15.583Z",
+    "end": "2023-08-18T01:39:15.785Z",
+    "duration": 202,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f1120680-8722-485e-a308-fe38ce67f1af",
+      "title": "",
+      "fullFile": "cypress/tests/integration/HomePage.feature",
+      "file": "cypress/tests/integration/HomePage.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "An uncaught error was detected outside of a test",
+          "fullTitle": "An uncaught error was detected outside of a test",
+          "timedOut": null,
+          "duration": 159,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "throw err;",
+          "err": {
+            "message": "ReferenceError: The following error originated from your test code, not from Cypress.\n\n  > SignUpPage is not defined\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.",
+            "estack": "ReferenceError: The following error originated from your test code, not from Cypress.\n\n  > SignUpPage is not defined\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.\n    at ./cypress/tests/step_definitions/signup_page_steps.js (webpack://interview-cypress-sandbox/./cypress/tests/step_definitions/signup_page_steps.js:3:0)\n    at __webpack_require__ (webpack://interview-cypress-sandbox/webpack/bootstrap:19:0)\n    at eval (webpack://interview-cypress-sandbox/./cypress/tests/integration/HomePage.feature:4:4)\n    at eval (https://demo.letsdeel.com/__cypress/tests?p=cypress/tests/integration/HomePage.feature:18371:3)\n    at eval (https://demo.letsdeel.com/__cypress/tests?p=cypress/tests/integration/HomePage.feature:18373:12)\n    at eval (<anonymous>)",
+            "diff": null
+          },
+          "uuid": "93ecf567-c8ac-47e1-b2f6-dbb571cfd539",
+          "parentUUID": "f1120680-8722-485e-a308-fe38ce67f1af",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "93ecf567-c8ac-47e1-b2f6-dbb571cfd539"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 159,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "[status]_[datetime]-[name]",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportFilename": "[status]_[datetime]-[name]",
+        "reportTitle": "Cypress Automated Suite",
+        "reportDir": "results",
+        "screenshotsFolder": "screenshots",
+        "overwrite": true,
+        "timestamp": "mm-dd-yyyy HH:MM",
+        "charts": true,
+        "screenshots": true,
+        "html": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}
